@@ -33,11 +33,11 @@ public class Player extends Unit implements PlayerBehaviour{
 
     @Override
     public void move() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        ++location;
     }
 
     @Override
-    public void attack(Monster target) {
+    public void attack(Monster target) {        
         System.out.printf("%s attacks the %s\n", name, target.toString());
     }
 
@@ -53,7 +53,7 @@ public class Player extends Unit implements PlayerBehaviour{
     }
     
     public Item checkInventory(int index){
-        return null;
+        return inventory.get(index);
     }
 
     /**
@@ -98,4 +98,8 @@ public class Player extends Unit implements PlayerBehaviour{
         this.location = location;
     }
     
+    @Override
+    public String toString(){
+        return getName();
+    }
 }
