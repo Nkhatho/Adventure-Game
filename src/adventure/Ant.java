@@ -11,6 +11,7 @@ public class Ant extends Monster{
         super.setSpecies("giant ant");
     }
 
+    @Override
     public void attack(Player target){
         System.out.println(target.toString() + " is bitten by the " + this.toString());
         System.out.println(target.toString() + " loses " + this.getAttackStrength() + "HP");

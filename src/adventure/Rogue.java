@@ -18,7 +18,7 @@ public class Rogue extends Player{
     public void attack(Monster target){
         System.out.printf("%s throws a fireball at the %s\n", 
                 getName(), target.toString());
-        System.out.printf("%s loses %d\n", target.toString(), getAttackStrength());
-        target.setHp(target.getHp() - getAttackStrength());
+        System.out.printf("%s loses %d HP\n", target.toString(), getAttackStrength());
+        target.setHP(target.getHP() - getAttackStrength());
     }
 }

@@ -23,14 +23,14 @@ public abstract class Unit {
     /**
      * @return the hp
      */
-    public int getHp() {
+    public int getHP() {
         return hp;
     }
 
     /**
      * @param hp the hp to set
      */
-    public void setHp(int hp) {
+    public void setHP(int hp) {
         this.hp = hp;
     }
 

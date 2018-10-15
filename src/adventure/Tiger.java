@@ -11,6 +11,7 @@ public class Tiger extends Monster{
         super.setSpecies("ferocious tiger");
     }
 
+    @Override
     public void attack(Player target){
         System.out.println(target.toString() + " is pounced upon by the " + this.toString());
         System.out.println(target.toString() + " loses " + this.getAttackStrength() + "HP");
